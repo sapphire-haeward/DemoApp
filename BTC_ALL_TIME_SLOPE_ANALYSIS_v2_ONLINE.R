@@ -8,12 +8,6 @@ library(tidyr)
 # Load necessary library
 library(readr)
 
-setwd("/Users/sapphirehaeward/Downloads/Scrap Work For Demo App")
-# Consider the Monthly All-Time Data
-# data_open <- read.csv("BTC_All_graph_coinmarketcap.csv", sep = ";")
-# data_open
-
-
 # URL of the CSV file
 csv_url <- "https://raw.githubusercontent.com/sapphire-haeward/DemoApp/main/BTC_All_graph_coinmarketcap.csv"
 
