@@ -1,6 +1,6 @@
 # https://www.globenewswire.com/newsroom
 
-rm(list = ls())
+# rm(list = ls())
 
 # Load the libraries
 library(rvest)
