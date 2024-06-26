@@ -80,7 +80,7 @@ class(growth_loss_date$`Growth/Loss`)
 # Plot Growth- Loss over time
 # Create a plot
 
-growth_loss_date %>%
+plot1 <- growth_loss_date %>%
  ggplot(aes(x = Date, y = `Growth/Loss`)) +
         geom_smooth(  method = "loess",
                       color = "blue",
@@ -97,11 +97,24 @@ growth_loss_date %>%
                             labels = function(x) x 
                             ) +
         labs( title = "Bitcoin Growth and Loss Over Time",
-              subtitle = "Observe Bitcoin's Growth and Loss Changes in Time")
+              subtitle = "Observe Bitcoin's Growth and Loss Changes in Time") 
+
+          # theme_fivethirtyeight() 
+# Display the plot
+print(plot1)
+
+
+# Save plot as a PDF file
+pdf_file <- "bitcoin_growth_loss_plot.pdf"
+pdf(pdf_file)
+print(plot1)
+dev.off()
+
+# Close the PDF file and open it using Adobe Acrobat or another viewer
+system(paste("open", shQuote(pdf_file)))
 
 
 
-# theme_fivethirtyeight() 
 
 
 # 
