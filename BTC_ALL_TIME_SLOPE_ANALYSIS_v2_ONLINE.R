@@ -94,18 +94,19 @@ plot1 <- growth_loss_date %>%
               subtitle = "Observe Bitcoin's Growth and Loss Changes in Time") 
 
           # theme_fivethirtyeight() 
+
 # Display the plot
-print(plot1)
+# print(plot1)
 
 
 # Save plot as a PDF file
-pdf_file <- "bitcoin_growth_loss_plot.pdf"
-pdf(pdf_file)
-print(plot1)
-dev.off()
+# pdf_file <- "bitcoin_growth_loss_plot.pdf"
+# pdf(pdf_file)
+# print(plot1)
+# dev.off()
 
 # Close the PDF file and open it using Adobe Acrobat or another viewer
-system(paste("open", shQuote(pdf_file)))
+# system(paste("open", shQuote(pdf_file)))
 
 
 
