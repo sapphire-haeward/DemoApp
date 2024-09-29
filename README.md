@@ -1,4 +1,4 @@
-I made a basid extract, transform, load web app with Shiny.
+I made a basic extract, transform, load web app with Shiny in R.
 
-You can find the project here:
+You can find and access the project here:
 https://sapphirehaeward.shinyapps.io/attempt_four/
